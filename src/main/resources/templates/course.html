@@ -9,9 +9,18 @@
 <form method="post">
 <tr><td>Nom</td><td><input type="text" name="nom" pattern="[A-Z a-z]{3,}"></td></tr>
 <tr><td>Prenom</td><td><input type="text" name="prenom" pattern="[A-Z a-z]{3,}"></td></tr>
-<tr><td>Age</td><td><input type="number" min="1"></td></tr>
+<tr><td>Age</td><td><input type="number" name="age" min="1"></td></tr>
 <tr><td colspan="2"> <input type="submit" value="Ajouter"></td></tr>
 </form>
 </table>
+<h2>Liste des participants</h2>
+<ul>
+<li th:each="part: ${liste}">
+
+<th:block th:text="${part}"></th:block>
+</li>
+</ul>
+<a href="/">retour</a>
+
 </body>
 </html>

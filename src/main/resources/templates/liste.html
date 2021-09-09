@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<meta charset="ISO-8859-1">
+<title>Organisateurs</title>
+</head>
+<body>
+<h2>Liste des organisateurs</h2>
+<ul>
+<li th:each="noms:${liste}">
+<th:block th:text="${noms}">nom</th:block>
+
+</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<ul th:if="${current.age>18}">
+<li th:text="${current.nom}"> </li>
+<li th:text="${current.prenom}"> </li>
+<li th:text="${current.sexe}"> </li>
+<li th:text="${current.age}"> </li>
+</ul>
+</body>
+</html>

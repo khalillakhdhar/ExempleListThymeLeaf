@@ -24,5 +24,10 @@ md.addAttribute("liste",listNom);
 return "liste";
 
 }
+@GetMapping("/course")
+public String getCourse()
+{
+return "course";	
+}
 
 }
